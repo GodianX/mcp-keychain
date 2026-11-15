@@ -1,0 +1,22 @@
+projects:
+  - name: "project_one"
+    dir: "/Users/username/Projects/go/project_one"
+    tools:
+      - name: "install"
+        desc: "Install project_one dependencies"
+        cmd: "task install"
+      - name: "test"
+        desc: "Run all project_one tests"
+        cmd: "task test"
+      - name: "linter_fix"
+        desc: "Run project_one linter with automatic fixes"
+        cmd: "task lcf"
+      - name: "linter_no_fix"
+        desc: "Run project_one linter without automatic fixes"
+        cmd: "task lc"
+  - name: "project_two"
+    dir: "/Users/username/Projects/go/project_two"
+    tools:
+      - name: "test"
+        desc: "Run all project_two tests"
+        cmd: "task test"

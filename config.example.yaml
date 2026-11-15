@@ -1,0 +1,12 @@
+server:
+  address: "127.0.0.1:8080"
+  allowed_hosts:
+    - "localhost:8080"
+    - "127.0.0.1:8080"
+    - "[::1]:8080"
+    - "host.docker.internal:8080"
+  command_timeout: "10m"
+  shutdown_timeout: "10s"
+
+logging:
+  mode: "console"

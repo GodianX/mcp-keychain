@@ -1,0 +1,22 @@
+version: '3'
+
+tasks:
+  install:
+    cmds:
+      - go mod download
+  run:
+    cmds:
+      - go run ./cmd/app
+  build:
+    cmds:
+      - go build -o bin/mcp-keychain ./cmd/app
+  test:
+    cmds:
+      - go test -race -coverprofile=coverage.out ./...
+  lc:
+    cmds:
+      - golangci-lint run ./...
+  lcf:
+    cmds:
+      - golangci-lint fmt
+      - golangci-lint run --fix ./...

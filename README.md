@@ -1,5 +1,7 @@
 # mcp-keychain
 
+This is project is vibecoded.
+
 An MCP server for running predefined Bash commands in project directories. Tools are registered at startup from `projects.yaml` and exposed over Streamable HTTP at `/mcp`.
 
 ## Getting started
